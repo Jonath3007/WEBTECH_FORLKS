@@ -1,0 +1,28 @@
+.container {
+    background: url(/C2/aset/image.jpg);
+    width: 50rem;
+    height: 25rem;
+    margin: 20px auto;
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.container .card {
+    position: absolute;
+    background-size: 100% 100%;
+    cursor: pointer;
+    transition: transform 0.4s ease-out, opacity 0.4s ease-out;
+    outline: 1px white solid;
+}
+
+.card.disappear {
+    transform: scale(0);
+    opacity: 0;
+}
+
+.controls {
+    text-align: center;
+    margin-top: 10px;
+}
