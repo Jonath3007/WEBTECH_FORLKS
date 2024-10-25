@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(50deg, rgb(68, 68, 68), rgb(54, 51, 51));
+}
+
+.navbar .logo h1 {
+    color: white;
+    font-size: 30px;
+    font-family: Poppins;
+}
+
+.navbar .menu {
+    list-style: none;
+    display: flex;
+}
+
+.navbar .menu li {
+    position: relative;
+    margin-left: 20px;
+}
+
+.navbar .menu a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+}
+
+.navbar .menu a:hover {
+    background-color: #555;
+    border-radius: 4px;
+}
+
+.navbar .dropdown {
+    display: none;
+    position: absolute;
+    top: 40px;
+    background-color: #000000;
+    list-style: none;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.navbar .dropdown li {
+    margin-bottom: 10px;
+}
+
+.navbar .menu li:hover .dropdown {
+    display: block;
+}
+
+.hero {
+    background: linear-gradient(150deg, rgb(42, 0, 156), rgb(94, 0, 172), rgb(130, 2, 235));
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.cta-btn {
+    background-color: #000000;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.cta-btn:hover {
+    background-color: #5a5a5a;
+}
+
+.cta-section {
+    background-color: rgb(54, 54, 54);
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.cta-section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.cta-section p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.cta-section .cta-btn {
+    background-color: #001aff;
+    padding: 10px 20px;
+}
+
+.cta-section .cta-btn:hover {
+    background-color: #7340ff;
+}
